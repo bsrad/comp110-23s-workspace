@@ -1,7 +1,9 @@
 def my_max(a: int, b: int) -> int:
-    if a >= b:
+    """Return the max number"""
+    if a > b:
         return a
-    
-    return b
+    else:
+        return b
 
-print(my_max(10,0))
+max: int = my_max(1,10)
+print(my_max(1,100)*max)

@@ -1,6 +1,6 @@
 """Ask user for number, give hints about number if wrong"""
 
-SECRET: int = 10
+SECRET: int = 12
 guess: int = int(input("Guess a number "))
 playing: bool = True
 
@@ -15,5 +15,5 @@ while playing:
             print("Too low ")
         else:
             print("Too high ")
-        guess = int(input("Wrong guess. Try again! "))
+        guess = int(input("Wrong guess bitch. Fuck you. Try again! "))
 
