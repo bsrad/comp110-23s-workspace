@@ -2,7 +2,9 @@
 
 __author__ = "730487901"
 
+
 from exercises.ex05.utils import only_evens, concat, sub
+
 
 def test_evens() -> None:
     """Returning only the even ints."""
@@ -11,7 +13,7 @@ def test_evens() -> None:
 
 
 def test_all_even() -> None:
-    """All ints are even, returning the even ints"""
+    """All ints are even, returning the even ints."""
     test_list: list[int] = [10, 10, 10]
     assert only_evens(test_list) == [10, 10, 10]
 
@@ -26,14 +28,14 @@ def test_concat() -> None:
     """Concatenating two lists."""
     test_list: list[int] = [1, 2, 3, 4]
     test_list1: list[int] = [5, 6, 7, 8]
-    assert concat(test_list, test_list1) == [1, 2, 3, 4, 5, 6 ,7, 8]
+    assert concat(test_list, test_list1) == [1, 2, 3, 4, 5, 6, 7, 8]
 
 
 def test_concat1() -> None:
     """Concatenating two lists."""
     test_list: list[int] = [20, 40, 60]
-    test_list1: list[int] = [60, 40 , 20]
-    assert concat(test_list, test_list1) == [20, 40, 60, 60 ,40 ,20]
+    test_list1: list[int] = [60, 40, 20]
+    assert concat(test_list, test_list1) == [20, 40, 60, 60, 40, 20]
 
 
 def test_empty_concat() -> None:
